@@ -197,11 +197,12 @@ body {
   gap: 5px;
   padding: 14px 25px;
   border: 1px solid var(--border-color, var(--bittersweet));
+  border-radius: 10px;
 }
 
 .btn-primary:is(:hover, :focus) {
-  --background: var(--salmon);
-  --border-color: var(--salmon);
+  --background: #00296b;
+  --border-color: var(--main-color);
 }
 
 .btn-secondary {
@@ -515,6 +516,7 @@ body {
 
 .navbar-link:is(:hover, :focus) {
   color: var(--bittersweet);
+  border-bottom: white;
 }
 
 .navbar-item:not(:last-child) {
@@ -968,7 +970,7 @@ a.footer-link:is(:hover, :focus) {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--bittersweet);
+  background: #128c7e;
   color: var(--white);
   font-size: 20px;
   padding: 10px;
@@ -986,7 +988,7 @@ a.footer-link:is(:hover, :focus) {
 }
 
 .go-top-btn:is(:hover, :focus) {
-  background: var(--salmon);
+  background: #25d366;
 }
 
 /*-----------------------------------*\
@@ -1317,7 +1319,7 @@ a.footer-link:is(:hover, :focus) {
 }
 
 .footer .share {
-  padding: 1rem 0;
+  padding: 5px 0;
 }
 
 .footer .share a {
@@ -1327,7 +1329,8 @@ a.footer-link:is(:hover, :focus) {
   font-size: 2rem;
   color: #00296b;
   border: var(--border);
-  margin: 3rem;
+  margin: 0.5rem;
+  margin-top: 2rem;
   border-radius: 25%;
 }
 
