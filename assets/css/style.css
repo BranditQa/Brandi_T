@@ -961,6 +961,71 @@ a.footer-link:is(:hover, :focus) {
   display: inline-block;
   color: var(--bittersweet);
 }
+.contact .row {
+  display: flex;
+  align-items: center;
+  background: #00296b;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.maps {
+  margin-top: 10px;
+  width: 600;
+  height: 450;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  /* color: var(--bg); */
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--bg);
+}
+
+.contact .row form .inputBox span {
+  color: var(--black);
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: none;
+  background: none;
+}
+
+.btns {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #00296b;
+  background: #e0e1dd;
+  cursor: pointer;
+}
+
+.btns:hover {
+  letter-spacing: 2px;
+}
 
 /*-----------------------------------*\
  * #GO TOP
@@ -979,7 +1044,7 @@ a.footer-link:is(:hover, :focus) {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-1);
-  z-index: 2;
+  z-index: 0;
 }
 
 .go-top-btn.active {
@@ -1342,15 +1407,15 @@ a.footer-link:is(:hover, :focus) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 1rem 0;
   gap: 1rem;
 }
 
 .footer .links a {
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 1rem;
   color: #00296b;
   border: var(--border);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer .links a:hover {
